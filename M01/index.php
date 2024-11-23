@@ -2,12 +2,12 @@
 include('connect.php');
 
 if (isset($_POST['btnSubmitMember'])) {
-    $fname = $_POST['firstName'];
-    $lname = $_POST['lastName'];
+    $firstName = $_POST['firstName'];
+    $lastName = $_POST['lastName'];
     $bio = $_POST['bio'];
     $age = $_POST['age'];
 
-    $memberQuery = "INSERT INTO userinfo(firstName, lastName, bio, age) VALUES ('$fname', '$lname', '$bio', '$age')";
+    $memberQuery = "INSERT INTO userinfo(firstName, lastName, bio, age) VALUES ('$fistName', '$lastName', '$bio', '$age')";
     executeQuery($memberQuery);
 }
 
@@ -225,8 +225,8 @@ $result = executeQuery($query);
                 <span class="nav-link px-2" style="color: #F6F5F2;">©rejoicerabino</span>
             </li>
         </ul>
-    <p class="text-center" style="color: #F6F5F2;">Polytechnic University of the Philippines</p>
-</footer>
+        <p class="text-center" style="color: #F6F5F2;">Polytechnic University of the Philippines</p>
+    </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

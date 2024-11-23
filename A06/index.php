@@ -2,12 +2,12 @@
 include('connect.php');
 
 if (isset($_POST['btnSubmitMember'])) {
-    $fname = $_POST['firstName'];
-    $lname = $_POST['lastName'];
+    $firstname = $_POST['firstName'];
+    $lastname = $_POST['lastName'];
     $bio = $_POST['bio'];
     $age = $_POST['age'];
 
-    $memberQuery = "INSERT INTO userinfo(firstName, lastName, bio, age) VALUES ('$fname', '$lname', '$bio', '$age')";
+    $memberQuery = "INSERT INTO userinfo(firstName, lastName, bio, age) VALUES ('$firstname', '$lastname', '$bio', '$age')";
     executeQuery($memberQuery);
 }
 
